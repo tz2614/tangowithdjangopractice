@@ -1,0 +1,13 @@
+Basic Workflow for setting up Django Database and Website
+
+1. Setting up your database
+Tell Django the databse you intend to use(configure DATABASES in settings.py)
+Register any models in the admin.py file to make these accessible via admin interface.
+
+2. Adding a Model
+
+a) Create new model in Django application's models.py file
+b) Update admin.py to include and register your new model(s)
+c) Perform migration $ python manage.py makemigrations
+d) Apply changes $python manage.py migrate. This will create the necessary infrastructure within database for your model(s)
+e) Create/Edit your population script for your model(s)
