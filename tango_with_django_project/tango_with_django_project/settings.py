@@ -22,12 +22,12 @@ TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'g&l7&&^u9lvw&43^3-z*vmf8v9mn-o7(y3_muvwk4v$!b8#&eu'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on upon release to avoid hackers!
 DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
