@@ -4,7 +4,7 @@ from rango import views
 app_name ='rango'
 
 urlpatterns = patterns('',
-        url(r'^$', views.index, name='index'), 
+        url(r'^$', views.index, name='home'), 
         url(r'^about/$', views.about, name='about'),
         #url(r'static$', views.static, name='static')
         url(r'^add_category/$', views.add_category, name='add_category'),
